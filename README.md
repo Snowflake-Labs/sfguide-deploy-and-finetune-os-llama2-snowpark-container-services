@@ -2,7 +2,7 @@
 
 ## Overview
 
-In this guide, you will get to explore [Snowpark Container Services](https://docs.snowflake.com/en/developer-guide/snowpark-container-services/overview) (SPCS), now in `Public Preview` on AWS, to deploy and fine-tune open source Llama 2 Large Language Model (LLM) from Hugging Face into SPCS.
+In this guide, you will get to explore [Snowpark Container Services](https://docs.snowflake.com/en/developer-guide/snowpark-container-services/overview) (SPCS), now in `Public Preview` ([check availability](https://docs.snowflake.com/developer-guide/snowpark-container-services/overview#available-regions)), to deploy and fine-tune open source Llama 2 Large Language Model (LLM) from Hugging Face into SPCS.
 
 ## Step-By-Step Guide
 

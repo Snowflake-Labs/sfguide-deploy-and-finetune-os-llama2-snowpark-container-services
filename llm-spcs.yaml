@@ -1,0 +1,23 @@
+spec:
+  container:  
+  - name: llm-spcs
+    image: sfdevrel-sfdevrel-enterprise.registry.snowflakecomputing.com/dash_db/dash_schema/dash_repo/llm-spcs
+    volumeMounts: 
+    - name: llm-workspace
+      mountPath: /notebooks/llm-workspace
+    env:
+      SNOWFLAKE_MOUNTED_STAGE_PATH: /notebooks/llm-workspace
+    resources:                         
+        requests:
+          nvidia.com/gpu: 1
+        limits:
+          nvidia.com/gpu: 1
+  endpoint:
+  - name: llm-spcs
+    port: 8888
+    public: true
+  volume:
+  - name: llm-workspace
+    source: "@llm_workspace"
+    uid: 0
+    gid: 0
